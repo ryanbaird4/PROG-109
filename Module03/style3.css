@@ -1,0 +1,22 @@
+*{
+ height:100%;
+}
+
+div {border-style:solid;
+     border-width:1px;
+     width:35%;
+     margin-top: 5%;
+     margin-bottom: 5%;
+     margin-right: 5%;
+     margin-left: 5%;
+}
+
+#left {
+      float:left;
+      background-color: blue;
+}
+
+#right {
+      float: right;
+      background-color:green;
+}
