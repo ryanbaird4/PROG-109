@@ -15,9 +15,9 @@ body {
   margin: 40px 0px 20px 0px;}
 
 .entry {
-  width: 16.5%;
+  width: 220px;
   float: left;
-  margin: 1%;
+  margin: 10px;
   height: 198px;
   background-image: url("images/shadow.png");
   background-repeat: no-repeat;
