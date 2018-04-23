@@ -23,7 +23,7 @@
                background-image: url("http://www.htmlandcssbook.com/code-samples/chapter-05/images/quokka.jpg");
                background-size:contain;
                background-position: right;
-               background-repeat:no-repeat;}
+               background-repeat:no-repeat;
 }
 			article {
 				width: 31.3%;
