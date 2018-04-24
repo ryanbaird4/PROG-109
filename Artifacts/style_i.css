@@ -1,0 +1,12 @@
+*{
+  font-family: 'UniqueRegular'; 
+                font-weight: normal; 
+                font-style: normal;
+                color: white;
+}
+body {
+				width: 90%;
+				margin: 0 auto;
+                background-image: url("http://www.htmlandcssbook.com/code-samples/chapter-16/images/pattern.gif");
+}
+
