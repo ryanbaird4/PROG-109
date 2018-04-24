@@ -1,0 +1,51 @@
+* {
+				 
+				color: #665544;
+				text-align: center;}
+			body {
+				width: 90%;
+				margin: 0 auto;
+                background-image: url("http://www.htmlandcssbook.com/code-samples/chapter-16/images/pattern.gif");
+}
+
+            h1 {
+      font-family: 'UniqueRegular'; 
+                font-weight: normal; 
+                font-style: normal;
+        color: white;
+}
+			div {
+				overflow: auto;}
+			nav, section, footer {
+				margin: 1%;
+}
+.feature{
+               background-image: url("http://www.htmlandcssbook.com/code-samples/chapter-05/images/quokka.jpg");
+               background-size:contain;
+               background-position: right;
+               background-repeat:no-repeat;
+}
+			article {
+				width: 31.3%;
+				float: left;
+				margin: 1%;
+				margin-right: 0%;
+                 }
+
+			li {
+				display: inline;
+				padding: 0.5em;}
+			nav, footer {
+				background-color: cyan;
+				padding: 0.5em 0;}
+			section, article {
+				height: 10em;
+				margin-bottom: 1em;
+				background-color: gray;}
+h3, h4 {
+  color: white;}
+
+.column1, .column2, .column3 {
+      background-color: gray;
+}
+
