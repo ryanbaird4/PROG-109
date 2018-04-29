@@ -1,20 +1,18 @@
 * {
 				 
 				color: #665544;
-				text-align: center;}
+				text-align: center;
+	font-family: 'UniqueRegular'; 
+                font-weight: normal; 
+                font-style: normal;
+        color: white;}
 			body {
 				width: 90%;
 				margin: 0 auto;
                 background-image: url("http://www.htmlandcssbook.com/code-samples/chapter-16/images/pattern.gif");
 }
 
-            h1 {
-      font-family: 'UniqueRegular'; 
-                font-weight: normal; 
-                font-style: normal;
-        color: white;
-}
-			div {
+		div {
 				overflow: auto;}
 			nav, section, footer {
 				margin: 1%;
@@ -42,7 +40,7 @@
 				height: 10em;
 				margin-bottom: 1em;
 				background-color: gray;}
-h3, h4 {
+h3, h4, p {
   color: white;}
 
 .column1, .column2, .column3 {
