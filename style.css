@@ -14,14 +14,8 @@
 
 		div {
 				overflow: auto;}
-			nav, section, footer {
+nav, section, footer {
 				margin: 1%;
-}
-.feature{
-               background-image: url("http://www.htmlandcssbook.com/code-samples/chapter-05/images/quokka.jpg");
-               background-size:contain;
-               background-position: right;
-               background-repeat:no-repeat;
 }
 			article {
 				width: 31.3%;
@@ -41,6 +35,7 @@
 				margin-bottom: 1em;
 				background-color: gray;}
 h3, h4, p {
+  text-align: left;
   color: white;}
 
 .column1, .column2, .column3 {
