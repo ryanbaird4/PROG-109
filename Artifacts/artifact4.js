@@ -4,12 +4,13 @@ function ValidateForm(){
  var validFirstName = false; 
  var validPhone = false;
  var validLastName = false;
- var validEmail = false;
- var validCity = false;
- var validAddress = false;
+ var userEmail = document.getElementById("email").value;
  var atpos = userEmail.indexOf("@");
  var dotpos = userEmail.lastIndexOf(".");
- var validZipcode = false;
+ var validAddress = false;
+ var validCity = false;
+ var validCountry = false;
+
   
  var letters = /^[A-Za-z]+$/;
  var numbers = /^[0-9]+$/;
@@ -68,41 +69,34 @@ function ValidateForm(){
  else
  validLastName = true; 
   
-  /********* VALIDATES EMAIL **************/
-if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length) 
-    errorMessages += "<p>Invalid email</p>";
+if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=email.length) 
+    // send error message. For example: 
+  errorMessages += "<p>Invalid email</p>";
 else
-    validEmail = true; 
+    return true; //Or assign the value to a variable. For example validEmail = true
   
-  /******** VALIDATES CITY ***************/
-     if (myContact.city.value===null ||
+  if (myContact.address.value===null ||
+ myContact.address.value=== "")
+ errorMessages += "<p>The address is required</p>";
+ else
+ validAddress = true; 
+  
+    if (myContact.city.value===null ||
  myContact.city.value=== "")
- errorMessages += "<p>City is required.</p>";
+ errorMessages += "<p>The city is required</p>";
  else
- validCity = true;
+ validCity = true; 
   
-  /******** VALIDATES ADDRESS ***************/
-   if (myContact.address.value===null ||
- myContact.address.value=== "")
- errorMessages += "<p>Address is required.</p>";
+ if (myContact.countries.value===null ||
+ myContact.countries.value=== "")
+ errorMessages += "<p>The country is required</p>";
  else
- validAddress = true;
+ validCountry = true; 
   
-/******** VALIDATES COUNTRY ***************/
-   if (myContact.address.value===null ||
- myContact.address.value=== "")
- errorMessages += "<p>Country is required.</p>";
- else
- validAddress = true;
-  
-  /******** VALIDATE ZIP ****************/
-  if (country === "USA" && myContact.zipcode.value.Length >5)
-    errorMessages += "<p>Zip code must be less than 5 characters and it is required.</p>";
- else
+  if (myContact.countries.value === "United States" && myContact.zipcode.value.length > 5)
+  errorMessages += "<p>A 5-digit zip code is required</p>";
+  else
   validZipcode = true;
-  
-  
-
   
  document.getElementById("errorMessages").innerHTML = errorMessages;
 // Make sure you return all the boolean variables that are checking each field
