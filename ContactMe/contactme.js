@@ -1,9 +1,12 @@
 function ValidateForm(){
 var validName = false;
-var validEmail = false;
+var userEmail = document.getElementById("email").value;
+var atpos = userEmail.indexOf("@");
+var dotpos = userEmail.lastIndexOf(".");
 var validComment = false;
 
 var letters = /^[A-Za-z]+$/;
+  
 
 var errorMessages ="";  
 
@@ -14,7 +17,7 @@ if (myContact.name.value===null ||
  else
  validName = true; 
 
-if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=email.length) 
+if (atpos < 1 || dotpos<atpos+2 || dotpos+2>=email.length) 
     // send error message. For example: 
   errorMessages += "<p>Invalid email.</p>";
 else
