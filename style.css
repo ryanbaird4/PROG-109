@@ -16,9 +16,11 @@
 				overflow: auto;}
 nav, section, footer {
 				margin: 1%;
-				text-color: black;
 }
 
+footer p {
+    color: black;
+}
 
 			article {
 				width: 31.3%;
